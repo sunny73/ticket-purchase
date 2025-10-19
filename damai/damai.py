@@ -7,6 +7,7 @@ __Created__ = 2023/10/10 17:12
 """
 import json
 import time
+import traceback
 
 from concert import Concert
 from config import Config
@@ -44,4 +45,9 @@ def grab():
 
 
 # exec
-grab()
+if __name__ == '__main__':
+    try:
+        grab()  
+    except Exception as e:
+        traceback.print_exc()  # 输出到标准错误流
+        # print(e)
