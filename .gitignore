@@ -180,3 +180,6 @@ credentials.json
 *.lock
 !poetry.lock
 
+
+# cookie
+*/damai_cookies.pkl
